@@ -1,17 +1,20 @@
 @font-face {
     font-family: "Barlow";
     src: url("../Fonts/Barlow-Bold.ttf");
-    font-weight: bold;
+    font-weight:bold;
+    font-style: normal;
 }
 @font-face {
     font-family: "Barlow";
     src: url("../Fonts/Barlow-ExtraBold.ttf");
     font-weight:bolder;
+    font-style: normal;
 }
 @font-face {
     font-family: "Barlow";
     src: url("../Fonts/Barlow-Regular.ttf");
-    font-weight: normal;
+    font-weight:normal;
+    font-style: normal;
 }
 
 html{
@@ -20,4 +23,64 @@ html{
 body{
 margin: 0;
 overflow-x: hidden;
+}
+.subtitle-list{
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    margin-bottom:0;
+    padding-left: 0;
+}
+.subtitle-list a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#eddbc7;  
+    font-weight:bold;
+    font-size:13px;  
+}
+.hero-section{
+    background-image: url("../images/hero-desk.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100wh;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.consultation-button {
+	background-color: #b5522b;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	font-size:17px;
+	padding:16px 31px;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:12px;
+    font-weight:bold;
+}
+.title, .hero-button{
+    justify-content: center;
+    display: flex;
+}
+.subtitle-list #divisionMarker::after{
+    content:" | ";   
+    font-weight:bolder;
+    color:#b5522b;
+    padding-right: 15px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+}
+.hero-button a,.title{
+    color:#fff;
+}
+.title h1{
+    font-size:4em;
+    font-weight:bold;
+    margin-top:0;
+    margin-bottom:0.3em;
+}
+.hero-content{
+    padding-top: 4em;
 }
