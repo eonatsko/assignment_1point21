@@ -5,11 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>B&B</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
 </head>
 
 <body>
-
+    <div class="header">
+        <nav class="flex-nav">
+            <img src="assets/images/logo.svg" class="logo-image" alt="placeholder" height="44" width="179">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" />
+            <ul class="nav-buttons">
+                <li><a href="#">Home</a></li>
+                <li><a id="dropList" href="#">Attorneys</a><i class="down-arrow"></i></li>
+                <li><a id="dropList" href="#">Practice Areas</a><i class="down-arrow"></i></li>
+                <li><a id="dropList" href="#">Request Consultation</a><i class="down-arrow"></i></li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Client Portal</a></li>
+            </ul>
+            <div class="header-contact">
+                    <h6 id="callUs">Call us today</h6>
+                    <h2 id="phoneNumber">(402) 827 7001</h2>
+                </div>
+        </nav>
+    </div>
 </body>
 
 </html>

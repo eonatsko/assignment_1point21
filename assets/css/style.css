@@ -1,12 +1,23 @@
 @font-face {
     font-family: "Barlow";
     src: url("../Fonts/Barlow-Bold.ttf");
+    font-weight: bold;
 }
 @font-face {
     font-family: "Barlow";
     src: url("../Fonts/Barlow-ExtraBold.ttf");
+    font-weight:bolder;
 }
 @font-face {
     font-family: "Barlow";
     src: url("../Fonts/Barlow-Regular.ttf");
+    font-weight: normal;
+}
+
+html{
+    font-family:Barlow;
+}
+body{
+margin: 0;
+overflow-x: hidden;
 }
