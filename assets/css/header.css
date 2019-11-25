@@ -1,89 +1,114 @@
-.flex-nav  {
+.flex-nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    top:0;
+    top: 0;
     position: sticky;
     padding: 10px 15px 10px 15px;
     align-items: center;
     max-width: -webkit-fill-available;
 }
-.nav-buttons  {
+
+.nav-buttons {
     display: flex;
-  }
- .nav-buttons a {
+}
+
+.nav-buttons a {
     padding: 1em;
     text-decoration: none;
-    color:#193d39;
-    font-weight:bold;
-    font-size:13px;
+    color: #193d39;
+    font-weight: bold;
+    font-size: 13px;
 }
-.nav-buttons{
+
+.nav-buttons {
     list-style: none;
     text-transform: uppercase;
 }
+
 .down-arrow {
-	border-color: #b5522b transparent;
-	border-style: solid;
-	border-width: 6px 4px 0px 4px;
-	height: 0px;
+    border-color: #b5522b transparent;
+    border-style: solid;
+    border-width: 6px 4px 0px 4px;
+    height: 0px;
     width: 0px;
     display: inline-block;
-    padding-bottom:1px;
+    padding-bottom: 1px;
 }
+
 .flex-nav label, #hamburger {
     display: none;
-  }
-#dropList{
-    padding-right:5px;
 }
-.header-contact{
+
+#dropList {
+    padding-right: 5px;
+}
+
+.header-contact {
     text-align: right;
     text-transform: uppercase;
 }
-#callUs{
+
+#callUs {
     color: #b5522b;
     margin-bottom: 0;
     margin-top: 0;
 }
-#phoneNumber{
-    color:#193d39;
+
+#phoneNumber {
+    color: #193d39;
     margin-top: 0;
     margin-bottom: 0;
 }
-@media screen and (max-width: 768px){
-.flex-nav label {
-    display: block;
-    color: #fff;
-    background: #b5522b;
-    font-style: normal;
-    font-size: 1.2em;
-    padding: 10px;
-    float: right;
-  }
-.flex-nav ul li {
-    display: block;
-  }
-.flex-nav ul li {
-    border-top: 1px solid #333;
-  }
-.flex-nav ul {
-    display: none;
-  }
-.flex-nav input:checked ~ ul{
-    display: block;
-  }
-#callUs,#phoneNumber{
-    display:none;
-}
-.flex-nav {
-    display: contents;
-}
-.logo-image{
-    padding: 10px 15px 10px 15px;
-}
-}
 
-
-
-
+@media screen and (max-width: 768px) {
+    .header-contact {
+        margin-top: -3em;
+    }
+    #callUs, #phoneNumber {
+        display: block !important;
+    }
+    .flex-nav label {
+        display: block;
+        color: #fff;
+        background: #b5522b;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+        float: right;
+        margin-left: 10px;
+    }
+    .flex-nav ul li {
+        display: block;
+    }
+    .flex-nav ul li {
+        border-top: 1px solid #333;
+    }
+    .flex-nav ul {
+        display: none;
+    }
+    .flex-nav input:checked~ul {
+        display: block;
+    }
+    #callUs, #phoneNumber {
+        display: none;
+    }
+    .flex-nav {
+        display: inline-block;
+        padding: 0;
+    }
+    .logo-image {
+        padding: 10px 10px 10px 10px;
+        width: 129px !important;
+        height: 32px !important;
+    }
+    #phoneNumber {
+        font-size: 14px;
+    }
+    #callUs {
+        font-size: 11px;
+    }
+    .hero-button{
+    padding-bottom: 1em;
+    }
+}
